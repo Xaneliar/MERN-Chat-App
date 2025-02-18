@@ -93,7 +93,7 @@ export const updateProfile = async (req, res) => {
         console.log("Error in updateProfile controller", error.message);
         res.status(400).json({message: "Inernal Server Error"})
     }
-}
+};
 
 export const checkAuth = (req,res) => {
     try {
@@ -102,4 +102,4 @@ export const checkAuth = (req,res) => {
         console.log("Error in checkAuth controller", error.message);
         res.status(500).json({message: "Inernal Server Error"})
     }
-}
+};
